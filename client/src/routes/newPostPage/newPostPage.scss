@@ -65,7 +65,10 @@
       gap: 20px;
       align-items: center;
       justify-content: center;
-  
+      overflow: scroll;
+      padding-bottom: 50px;
+      
+      
       img {
         width: 50%;
         height: 180px;
