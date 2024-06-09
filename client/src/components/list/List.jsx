@@ -3,11 +3,12 @@ import "./list.scss"
 import Card from "../card/Card"
 import { listData } from "../../lib/dummydata"
 
-const List = () => {
+const List = ({ posts, isProfilePage }) => {
+
   return (
     <div className='list'>
-        {listData.map((item) => (
-            <Card key={item.id} item={item} />
+        {posts.map((item) => (
+            <Card isProfile={isProfilePage ? true : false} key={item.id} item={item} />
         ))}
     </div>
   )
